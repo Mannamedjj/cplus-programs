@@ -1,0 +1,49 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+//Defines the required variables.
+
+int num;
+
+char output = 'A';
+
+//Prompts the user to provide input.
+
+cout<<"Enter an integer between 0 and 35: ";
+
+cin>>num;
+
+//Checks if the input lies between the required values.
+
+if(num<0 || num>35)
+
+{
+
+cout<<"Invalid input";
+
+return 0;
+
+}
+
+//Checks if the number is below 9.
+
+if(num<=9)
+
+cout<<num;
+
+//Returns the character equivalent of the number.
+
+else
+
+{
+
+output = static_cast<char>('A' + (num-10));
+
+cout<<"\n"<<output;
+
+}
+
+}
